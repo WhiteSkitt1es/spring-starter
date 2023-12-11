@@ -1,2 +1,3 @@
-package com.example.spring.database.entity;public class Company {
+package com.example.spring.database.entity;
+public record Company(Integer id) {
 }

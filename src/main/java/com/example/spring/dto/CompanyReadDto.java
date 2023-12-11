@@ -1,2 +1,4 @@
-package com.example.spring.dto;public class CompanyReadDto {
+package com.example.spring.dto;
+
+public record CompanyReadDto(Integer id) {
 }

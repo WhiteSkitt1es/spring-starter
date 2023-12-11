@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+<!--    <context:annotation-config/>-->
+<!--    <context:component-scan base-package="com.example.spring"-->
+<!--                            annotation-config="true"-->
+<!--                            resource-pattern="**/*.class"-->
+<!--                            scoped-proxy="no"-->
+<!--                            use-default-filters="false">-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>-->
+<!--        <context:include-filter type="assignable" expression="com.example.spring.database.repository.CrudRepository"/>-->
+<!--        <context:include-filter type="regex" expression="com\..+Repository"/>-->
+<!--    </context:component-scan>-->
+
+<!--    <context:property-placeholder location="classpath:application.properties"/>-->
+
+<!--    <bean class="com.example.spring.bpp.InjectBeanPostProcessor"/>-->
+<!--    <bean class="com.example.spring.bpp.TransactionBeanPostProcessor"/>-->
+<!--    <bean class="com.example.spring.bpp.AuditingBeanPostProcessor"/>-->
+<!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
+
+<!--    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">-->
+<!--        <property name="locations" value="classpath:application.properties"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="connectionPool" name="pool" class="com.example.spring.database.pool.ConnectionPool">-->
+<!--          init-method="init"-->
+<!--          destroy-method="destroy"-->
+<!--        <constructor-arg name="username" type="java.lang.String" value="${db.username}"/>-->
+<!--        <constructor-arg name="poolSize" type="java.lang.Integer" value="${db.pool.size}"/>-->
+<!--        <constructor-arg name="args" type="java.util.List">-->
+<!--            <list>-->
+<!--                <value>&#45;&#45;arg1=value1</value>-->
+<!--                <value>&#45;&#45;arg2=value2</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+<!--        <constructor-arg name="properties" type="java.util.Map">-->
+<!--            <map>-->
+<!--                <entry key="url" value="postrgresurl"/>-->
+<!--                <entry key="password" value="123"/>-->
+<!--            </map>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="companyRepository" class="com.example.spring.database.repository.CompanyRepository"/>-->
 </beans>
