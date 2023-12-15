@@ -6,6 +6,8 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.io.IOException;
+
 @SpringBootApplication
 @ConfigurationPropertiesScan
 public class ApplicationRunner {

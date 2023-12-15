@@ -1,0 +1,16 @@
+db:
+  username: test
+  password: test
+  driver: PostgresDriver
+  url: jdbc:postgresql://localhost:5434/postgres
+  pool:
+    size: 12
+    timeout: 10
+
+#logging:
+#  level:
+#    root: warn
+#    com.example.spring.database.pool.ConnectionPool: INFO
+#  file:
+#    name: example.log
+#    path: /
