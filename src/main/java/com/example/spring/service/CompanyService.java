@@ -1,13 +1,14 @@
 package com.example.spring.service;
 
 import com.example.spring.database.entity.Company;
-import com.example.spring.database.repository.CrudRepository;
+import com.example.spring.database.repository.CompanyRepository;
 import com.example.spring.dto.CompanyReadDto;
 import com.example.spring.listener.entity.AccessType;
 import com.example.spring.listener.entity.EntityEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -15,9 +16,10 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CompanyService {
 
-    private final CrudRepository<Integer, Company> companyRepository;
+    private final CompanyRepository companyRepository;
     private final ApplicationEventPublisher eventPublisher;
 
+    @Transactional
     public Optional<CompanyReadDto> findById(Integer id) {
         return companyRepository.findById(id)
                 .map(entity -> {

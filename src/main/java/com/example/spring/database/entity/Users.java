@@ -1,22 +1,27 @@
 package com.example.spring.database.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
+import org.hibernate.envers.RelationTargetAuditMode;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+//@NamedEntityGraph(name = "Users.company",
+//        attributeNodes = @NamedAttributeNode("company"))
 @Data
+@ToString(exclude = "usersChats")
+@EqualsAndHashCode(of = "username", callSuper = false)
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
 @Table(name = "users")
-public class Users implements BaseEntity<Long>{
+@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
+public class Users extends AuditingEntity<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,6 +43,7 @@ public class Users implements BaseEntity<Long>{
     @JoinColumn(name = "company_id")
     private Company company;
 
+    @NotAudited
     @Builder.Default
     @OneToMany(mappedBy = "users")
     private List<UsersChat> usersChats = new ArrayList<>();

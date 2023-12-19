@@ -6,6 +6,11 @@ db:
   pool:
     size: 12
     timeout: 10
+spring:
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl.auto: update
 
 #logging:
 #  level:

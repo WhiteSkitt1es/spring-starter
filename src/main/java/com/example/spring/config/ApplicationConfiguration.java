@@ -1,7 +1,6 @@
 package com.example.spring.config;
 
 import com.example.spring.database.pool.ConnectionPool;
-import com.example.spring.database.repository.CrudRepository;
 import com.example.web.config.WebConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;

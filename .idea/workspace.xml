@@ -5,27 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44b5d45e-8344-4245-901d-1f47eef55ad4" name="Changes" comment="Spring is being studied">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/#logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/TestApplicationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/annotation/IT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/service/CompanyServiceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/service/CompanyServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/spring.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/config/AuditConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/AuditingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/Revision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/FilterUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/FilterUserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/dto/PersonalInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/dto/PersonalInfo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/dto/UserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/audit.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/database/repository/CompanyRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/database/repository/UserRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/ApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/ApplicationRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/config/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/config/JpaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/bpp/TransactionBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/bpp/TransactionBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/config/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/config/ApplicationConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/database/pool/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/pool/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/entity/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/CrudRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/database/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spring/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spring/service/CompanyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/annotation/IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/integration/annotation/IT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/spring/service/CompanyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/spring/service/CompanyServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +60,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -77,6 +82,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -94,8 +100,8 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -107,6 +113,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.spring.database.entity" />
       <recent name="com.example.spring.service" />
       <recent name="com.example.spring.config.condition" />
       <recent name="com.example.spring.listener.entity" />
@@ -120,14 +127,16 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.spring.integration.database.repository" />
       <recent name="com.example.spring.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.spring.database.entity" />
       <recent name="com.example.spring.bpp" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationRunner">
-    <configuration name="CompanyServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserRepositoryTest.checkJdbcTemplate">
+    <configuration name="CompanyRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.spring.integration.service.CompanyServiceIT&quot;" />
+            <option value="&quot;com.example.spring.integration.database.repository.CompanyRepositoryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +160,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CompanyServiceIT.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CompanyRepositoryTest.save" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +173,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.spring.integration.service.CompanyServiceIT.findById&quot;" />
+            <option value="&quot;com.example.spring.integration.database.repository.CompanyRepositoryTest.save&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,7 +184,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CompanyServiceTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest.checkAuditing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -188,7 +197,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.spring.service.CompanyServiceTest.findById&quot;" />
+            <option value="&quot;com.example.spring.integration.database.repository.UserRepositoryTest.checkAuditing&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,7 +208,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'com.example.spring.integration'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest.checkJdbcTemplate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -212,7 +221,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.spring.integration.*&quot;" />
+            <option value="&quot;com.example.spring.integration.database.repository.UserRepositoryTest.checkJdbcTemplate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -223,28 +232,26 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="spring-starter [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.spring.integration.service.UserServiceIT&quot;" />
+            <option value="classes" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="ApplicationRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -256,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CompanyServiceIT.findById" />
-        <item itemvalue="Gradle.Tests in 'com.example.spring.integration'" />
-        <item itemvalue="Gradle.UserServiceIT" />
-        <item itemvalue="Gradle.CompanyServiceIT" />
-        <item itemvalue="Gradle.CompanyServiceTest.findById" />
+        <item itemvalue="Gradle.UserRepositoryTest.checkJdbcTemplate" />
+        <item itemvalue="Gradle.CompanyRepositoryTest.save" />
+        <item itemvalue="Gradle.CompanyRepositoryTest" />
+        <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
+        <item itemvalue="Gradle.spring-starter [classes]" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +304,12 @@
       <workItem from="1702635174374" duration="2295000" />
       <workItem from="1702642482419" duration="1278000" />
       <workItem from="1702644095654" duration="2973000" />
+      <workItem from="1702649638933" duration="1987000" />
+      <workItem from="1702668823090" duration="2070000" />
+      <workItem from="1702716034519" duration="9536000" />
+      <workItem from="1702801642557" duration="4369000" />
+      <workItem from="1702886163349" duration="13346000" />
+      <workItem from="1702911248150" duration="4438000" />
     </task>
     <task id="LOCAL-00001" summary="Spring is being studied">
       <option name="closed" value="true" />
@@ -314,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702410411288</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Spring is being studied">
+      <option name="closed" value="true" />
+      <created>1702651611712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702651611712</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +363,16 @@
           <properties class="org.springframework.beans.factory.UnsatisfiedDependencyException" package="org.springframework.beans.factory" />
           <option name="timeStamp" value="7" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/spring/integration/service/CompanyServiceIT.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.1.1/6e38793c6f2fb08afa6d8712a63be8bebd923065/spring-aop-6.1.1-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java</url>
+          <line>706</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
