@@ -13,14 +13,14 @@ db:
       timeout: 2
     - size: 3
       timeout: 3
-logging:
-  level:
-    root: INFO
-    com.example.spring.database.pool.ConnectionPool: INFO
-    org.springframework.jdbc.core: TRACE
-  file:
-    name: example.log
-    path: /
+#logging:
+#  level:
+#    root: INFO
+#    com.example.spring.database.pool.ConnectionPool: INFO
+#    org.springframework.jdbc.core: TRACE
+#  file:
+#    name: example.log
+#    path: /
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5434/postgres
@@ -36,3 +36,7 @@ spring:
         show_sql: true
         format_sql: true
         hbm2ddl.auto: validate
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
