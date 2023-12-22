@@ -6,12 +6,14 @@ import com.example.spring.database.repository.UserRepository;
 import com.example.spring.dto.PersonalInfo;
 import com.example.spring.dto.PersonalInfo2;
 import com.example.spring.dto.UserFilter;
+import com.example.spring.integration.IntegrationTestBase;
 import com.example.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.*;
 import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.jdbc.Sql;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -20,9 +22,8 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
 @RequiredArgsConstructor
-class UserRepositoryTest {
+class UserRepositoryTest extends IntegrationTestBase {
 
     private final UserRepository userRepository;
 

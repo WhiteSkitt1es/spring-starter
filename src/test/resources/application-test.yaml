@@ -1,12 +1,13 @@
 db:
   username: test
   password: test
-  driver: PostgresDriver
-  url: jdbc:postgresql://localhost:5434/postgres
-  pool:
-    size: 12
-    timeout: 10
+
 spring:
+  datasource:
+#    url: jdbc:h2:mem:test
+    username: test
+    password: test
+#    driver-class-name: org.h2.Driver
   jpa:
     properties:
       hibernate:
