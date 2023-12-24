@@ -7,6 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 import java.io.IOException;
+import java.util.HashSet;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan
