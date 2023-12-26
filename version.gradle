@@ -1,5 +1,5 @@
 ext {
     versions = [
-            'testcontainers': '1.19.3'
+            'testcontainers': '1.19.3',
     ]
 }

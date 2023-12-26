@@ -23,11 +23,11 @@ public class GreetingController {
     }
 
     @GetMapping(value = "/hello")
-    public String hello(Model model, HttpServletRequest request, @ModelAttribute UserReadDto userReadDto) {
+    public String hello(Model model, HttpServletRequest request, @ModelAttribute("userReadDto") UserReadDto userReadDto) {
 //        request.getSession().setAttribute(); sessionScope
 //        request.setAttribute(); requestScope
 //        request.getSession().getAttribute("user");
-//        model.addAttribute("user", new UserReadDto(1L, "Ivan"));
+        model.addAttribute("user", userReadDto);
         return "greeting/hello";
     }
 

@@ -1,11 +1,10 @@
 package com.example.spring.config;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
-
+@Validated
 @ConfigurationProperties(prefix = "db")
 public record DatabaseProperties(String username,
                                  String password,

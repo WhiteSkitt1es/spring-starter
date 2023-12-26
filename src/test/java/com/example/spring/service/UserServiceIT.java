@@ -1,13 +1,10 @@
 package com.example.spring.service;
 
 import com.example.spring.database.entity.Role;
-import com.example.spring.database.repository.UserService;
 import com.example.spring.dto.UserCreateEditDto;
 import com.example.spring.dto.UserReadDto;
 import com.example.spring.integration.IntegrationTestBase;
-import com.example.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
