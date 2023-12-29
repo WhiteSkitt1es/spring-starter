@@ -43,3 +43,13 @@ spring:
       suffix: .jsp
     format:
       date: iso
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 305083443153-ms12rkkhdh7vin4fiqmdvs0svkvben28.apps.googleusercontent.com
+            clientSecret: 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
+            redirectUri: http://localhost:8080/login/oauth2/code/google
+  messages:
+    basename: messages

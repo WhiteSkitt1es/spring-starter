@@ -12,6 +12,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PostFilter;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -40,12 +42,15 @@ public class UserService implements UserDetailsService {
                 .map(userReadMapper::map);
     }
 
+//    @PostFilter("filterObject.company.name().equals('Amazon')")
+//    @PostFilter("@companyService.findById(filterObject.company.id()).isPresent()")
     public List<UserReadDto> findAll() {
         return userRepository.findAll().stream()
                 .map(userReadMapper::map)
                 .toList();
     }
-
+//    @PreAuthorize("hasAnyAuthority('ADMIN')")
+//    @PostAuthorize("returnObject")
     public Optional<UserReadDto> findByID(Long id) {
         return userRepository.findById(id)
                 .map(userReadMapper::map);
